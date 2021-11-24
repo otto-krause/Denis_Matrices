@@ -2,17 +2,16 @@
 #include <stdlib.h>
 int main()
 {
-	int tabla[2][3]={
-		{10,5,2},
-	{8,3,4}
-	},
-		tabla1[2][3]={
-			{10,5,2},
-		{8,3,4}
-		};
-		
+	int tabla[2][3];
 		
 		int i,j;
+		for(int i=0;i<2;i++)
+		{
+			for(int j=0;j<3;j++){
+				printf ("Ingrese el valor de la columna y fila:\n", i, j);
+				scanf ("%d",&tabla[i][j],&tabla[i][j]);
+			}
+		}
 		printf("Matriz sin multiplicar:\n");
 		for(i=0;i<2;i++)
 		{
@@ -41,12 +40,12 @@ int main()
 		printf("\nTercera columna multiplicada por 3:\n");
 		for(i=0;i<2;i++)
 		{
-			tabla1[i][2] = tabla1[i][2] * 3;
+			tabla[i][2] = tabla[i][2] * 3;
 			for(j=0;j<3;j++)
 			{
-				printf("%d ",tabla1[i][j]);
+				printf("%d ",tabla[i][j]);
 			}
-			printf("\n");
+			printf("\n") ;
 		}
 		
 		return 0;
