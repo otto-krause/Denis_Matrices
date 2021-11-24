@@ -2,13 +2,13 @@
 #include<stdlib.h>
 int main()
 {
-	int num[100][3],i,a,b;
+	int num[100][3],i,j,b;
 	for(int i=0;i<100;i++)
 	{
-		for(int a=0;a<3;a++)
+		for(int j=0;j<3;j++)
 		{
-			printf("Ingrese la nota del %d trimestre del alumno %d: ",a+1,i+1);
-			scanf("%d",&num[i][a]);
+			printf("Ingrese la nota del %d trimestre del alumno %d: ",j+1,i+1);
+			scanf("%d",&num[i][j]);
 		}
 	}
 	system("cls");
@@ -27,11 +27,11 @@ int main()
 			
 			printf("Ingresar el trimestre:");
 			
-			scanf("%d",&a);
+			scanf("%d",&j);
 			
 			printf("Ingresar la nota:");
 			
-			scanf("%d",&num[i][a]);
+			scanf("%d",&num[i][j]);
 		}
 	}
 	while(b!=2);
