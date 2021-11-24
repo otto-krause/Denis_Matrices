@@ -3,13 +3,13 @@
 int main()
 {
 	int tabla[2][3]={{8,5,2},{4,18,3}};
-	int i,a,may,men,sum = 0 ;
+	int i,j,may,men,sum = 0 ;
 	printf("Matriz no modificada:\n");
 	for(i=0;i<2;i++)
 	{
-		for(a=0;a<3;a++)
+		for(j=0;j<3;j++)
 		{
-			printf("%d ",tabla[i][a]);
+			printf("%d ",tabla[i][j]);
 		}
 		printf("\n");
 	}
@@ -18,15 +18,15 @@ int main()
 	{
 		tabla[0][i]=tabla[0][i] * 4;
 	}
-	for(a=0;a<2;a++)
+	for(j=0;j<2;j++)
 	{
-		tabla[a][2]=tabla[a][2] * 3;
+		tabla[j][2]=tabla[j][2] * 3;
 	}
 	for(i=0;i<=1;i++)
 	{
-		for(a=0;a<3;a++)
+		for(j=0;j<3;j++)
 		{
-			printf("%d ",tabla[i][a]);
+			printf("%d ",tabla[i][j]);
 		}
 		printf("\n");
 	}
@@ -35,13 +35,13 @@ int main()
 	for(i=0;i<=1;i++)
 	{
 		
-		for(a=0;a<3;a++)
+		for(j=0;j<3;j++)
 			
 		{
-			if(tabla[i][a] > may)
+			if(tabla[i][j] > may)
 				
 			{
-				may=tabla[i][a];
+				may=tabla[i][j];
 			}
 		}
 		printf("\n");
@@ -50,20 +50,20 @@ int main()
 	men = may;
 	for(i=0;i<=1;i++)
 	{
-		for(a=0;a<3;a++)
+		for(j=0;j<3;j++)
 		{
-			if(tabla[i][a]<men)
+			if(tabla[i][j]<men)
 				
-				men=tabla[i][a];
+				men=tabla[i][j];
 		}
 		printf("\n");
 	}
 	printf("El valor menor de los elementos de la matriz modificada es: %d\n\n",men);
 	for(i=0;i<=1;i++)
 	{
-		for(a=0;a<3;a++)
+		for(j=0;j<3;j++)
 		{
-			sum=sum+tabla[i][a];
+			sum=sum+tabla[i][j];
 		}
 	}
 	printf("La suma de los elementos de la matriz es: %d\n",sum);
