@@ -2,8 +2,16 @@
 #include <stdlib.h>
 int main()
 {
-	int tabla[2][3]={{8,5,2},{4,18,3}};
+	int tabla[2][3];
 	int i,j,may,men,sum = 0 ;
+    
+	for (i=0;i<2;i++)
+	{
+		for(j=0;j<3;j++){
+			printf ("Ingrese la matriz:\n", i, j);
+			scanf("%d",&tabla[i][j]);
+		}
+	}
 	printf("Matriz no modificada:\n");
 	for(i=0;i<2;i++)
 	{
