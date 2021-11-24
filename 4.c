@@ -8,7 +8,7 @@ int main()
 	{
 		for(int j=0;j<12;j++)
 		{
-			printf("El conjunto de la linea %d y el grupo %d es: \n",i+1,v+1);
+			printf("El conjunto de la linea %d y el grupo %d es: \n",i+1,j+1);
 			scanf("%d",&tabla[i][j]);
 		}
 	}
@@ -19,8 +19,8 @@ int main()
 		suma1=0;
 		for(int j=0;j<12;j++)
 		{
-			printf("El conjunto de la linea %d y el grupo %d es de:%d \n",i+1,v+1,tabla[i][j);
-			suma1=suma1+tabla[i][j;
+			printf("El conjunto de la linea %d y el grupo %d es de:%d \n",i+1,j+1,tabla[i][j]);
+			suma1=suma1+tabla[i][j];
 		}
 		printf("\n");
 		suma2 = suma2 + suma1;
