@@ -4,16 +4,16 @@ int main()
 {
 	int tabla [2][3] = {{6,4,5}, {2,6,4}};
 	
-	int i,a;
+	int i,j;
 	
 	for(i=0;i<2;i++)
 		
 	{
 		
 	
-		for(a=0;a<3;a++)
+		for(j=0;j<3;j++)
 		{
-			printf("%d",tabla[i][a]);
+			printf("%d",tabla[i][j]);
 		}
 		
 		printf("\n");
