@@ -8,7 +8,7 @@ int main()
 	{
 		for(int j=0;j<6;j++)
 		{
-			printf("Ingresar el promedio de habitantes del departamento %d del piso %d: ",j+1,i+1);
+			printf("Ingresar el promedio de habitantes del departamento %d del piso %d\n: ",j+1,i+1);
 			scanf("%d",&tabla[i][j]);
 		}
 	}
@@ -20,7 +20,7 @@ int main()
 			suma=suma+tabla[i][j];
 			promedio=suma/6;
 		}
-		printf("Hay un promedio de %d personas en el piso %d",i+1,promedio);
+		printf("\nHay un promedio de %d personas en el piso %d\n",i+1,promedio);
 		
 		printf("\n");
 	}
